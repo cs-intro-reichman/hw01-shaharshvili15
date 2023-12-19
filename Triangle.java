@@ -5,6 +5,15 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		// Put your code here	
+		// Put your code here
+		var a = Integer.parseInt(args[0]);
+		var b = Integer.parseInt(args[1]);
+		var c = Integer.parseInt(args[2]);
+		boolean result = false;
+		if(a + b > c && a + c > b && c + b > a)
+		{
+			result = true;
+		}
+		System.out.printf("%d, %d, %d: %b", a,b,c,result);
 	}
 }
