@@ -3,8 +3,8 @@
  */
 public class AddTwo {
     public static void main(String[] args) {
-        var first = Integer.parseInt(args[0]);
-        var second = Integer.parseInt(args[1]);
-        System.out.printf("%d+%d=%d%n", first, second, first + second);
+        var firstNumber = Integer.parseInt(args[0]);
+        var secondNumber = Integer.parseInt(args[1]);
+        System.out.printf("%d+%d=%d%n", firstNumber, secondNumber, firstNumber + secondNumber);
     }
 }

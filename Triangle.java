@@ -5,10 +5,11 @@
  */
 public class Triangle {
     public static void main(String[] args) {
-        var a = Integer.parseInt(args[0]);
-        var b = Integer.parseInt(args[1]);
-        var c = Integer.parseInt(args[2]);
-        boolean result = a + b > c && a + c > b && c + b > a;
-        System.out.printf("%d, %d, %d: %b", a, b, c, result);
+        var sideA = Integer.parseInt(args[0]);
+        var sideB = Integer.parseInt(args[1]);
+        var sideC = Integer.parseInt(args[2]);
+        //Check if the sum of every two sides is greater than the third side
+        boolean result = sideA + sideB > sideC && sideA + sideC > sideB && sideC + sideB > sideA;
+        System.out.printf("%d, %d, %d: %b", sideA, sideB, sideC, result);
     }
 }

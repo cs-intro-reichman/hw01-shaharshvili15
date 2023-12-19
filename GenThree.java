@@ -16,6 +16,7 @@ public class GenThree {
         for (int i = 0; i < 2; i++) {
             var random = rand.nextInt(min, max);
             System.out.println(random);
+            //Check if the new random number is less then the current minimum
             if (random < minNumber) {
                 minNumber = random;
             }
