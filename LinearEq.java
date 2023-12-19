@@ -5,5 +5,11 @@
  * Treats the three arguments as well as the computed value as double values
  */
 public class LinearEq {
-	// Put your code here
+    public static void main(String[] args) {
+        var a = Double.parseDouble(args[0]);
+        var b = Double.parseDouble(args[1]);
+        var c = Double.parseDouble(args[2]);
+        var x = (c - b) / a ;
+        System.out.printf("x = %f", x);
+    }
 }
