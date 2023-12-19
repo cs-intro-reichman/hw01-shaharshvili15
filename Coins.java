@@ -4,9 +4,9 @@
  */
 public class Coins {
     public static void main(String[] args) {
-        int numberOfCents = Integer.parseInt(args[0]);
-        int numberOfQuartersCoins = numberOfCents / 25;
-        int numberOfCentsCoins = numberOfCents % 25;
+        var numberOfCents = Integer.parseInt(args[0]);
+        var numberOfQuartersCoins = numberOfCents / 25;
+        var numberOfCentsCoins = numberOfCents % 25;
         System.out.printf("Use %d quarters and %d cents", numberOfQuartersCoins, numberOfCentsCoins);
     }
 }
