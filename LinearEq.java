@@ -10,6 +10,8 @@ public class LinearEq {
         var b = Double.parseDouble(args[1]);
         var c = Double.parseDouble(args[2]);
         var x = (c - b) / a;
+        System.out.printf("%f * x + %f = %f", a,b,c);
+        System.out.println();
         System.out.printf("x = %f", x);
     }
 }
