@@ -4,11 +4,11 @@
  */
 public class Coins {
     public static void main(String[] args) {
-        var numberOfCents = Integer.parseInt(args[0]);
+        int numberOfCents = Integer.parseInt(args[0]);
         //Check how many times I can put 25 in the number of cents
-        var numberOfQuartersCoins = numberOfCents / 25;
+        int numberOfQuartersCoins = numberOfCents / 25;
         //Check what is the remaining cents
-        var numberOfCentsCoins = numberOfCents % 25;
+        int numberOfCentsCoins = numberOfCents % 25;
         System.out.printf("Use %d quarters and %d cents", numberOfQuartersCoins, numberOfCentsCoins);
     }
 }
