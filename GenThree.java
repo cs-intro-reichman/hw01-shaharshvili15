@@ -7,14 +7,14 @@ import java.util.Random;
 
 public class GenThree {
     public static void main(String[] args) {
-        var min = Integer.parseInt(args[0]);
-        var max = Integer.parseInt(args[1]);
+        int min = Integer.parseInt(args[0]);
+        int max = Integer.parseInt(args[1]);
         Random rand = new Random();
-        var firstRandom = rand.nextInt(min, max);
-        var minNumber = firstRandom;
+        int firstRandom = rand.nextInt(min, max);
+        int minNumber = firstRandom;
         System.out.println(firstRandom);
         for (int i = 0; i < 2; i++) {
-            var random = rand.nextInt(min, max);
+            int random = rand.nextInt(min, max);
             System.out.println(random);
             //Check if the new random number is less then the current minimum
             if (random < minNumber) {
